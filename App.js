@@ -12,8 +12,8 @@ const Stack = createStackNavigator();
 
 const App = () => (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="Github users">
-      <Stack.Screen name="Github users" component={MainScreen} />
+    <Stack.Navigator initialRouteName="Users">
+      <Stack.Screen name="Users" component={MainScreen} />
       <Stack.Screen name="Followers" component={Followers} />
     </Stack.Navigator>
   </NavigationContainer>
