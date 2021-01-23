@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text, Image, Pressable, Linking} from 'react-native';
+import {View, Text, Image, Pressable} from 'react-native';
 
 import styles from './styles';
 
 const ListItem = ({item, navigation, disabled}) => {
-  const openFollowersList = () => {
+  const _onItemPress = () => {
     if (disabled) return;
 
     navigation.navigate('Followers', {
@@ -15,7 +15,7 @@ const ListItem = ({item, navigation, disabled}) => {
   if (!item) return null;
 
   return (
-    <Pressable onPress={openFollowersList} style={styles.itemContainer}>
+    <Pressable onPress={_onItemPress} style={styles.itemContainer}>
       <Image style={styles.avatar} source={{uri: item.avatar_url}} />
 
       <View style={[styles.columnWrapper, styles.centerBlock]}>

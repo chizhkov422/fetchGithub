@@ -12,15 +12,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 16,
   },
-
-  screenTitle: {
-    fontSize: 32,
-    marginBottom: 32,
-  },
-
-  flatListStyle: {
-    width: '100%',
-  },
 });
 
 export default styles;
